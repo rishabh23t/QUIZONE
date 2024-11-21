@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select yor intrest</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Main Content Section */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        main p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .field-option {
+            a{
+                text-decoration: none;
+                color: #333;
+            }
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-align: center;
+          
+            width: 250px;
+            display: inline-block;
+        }
+
+        .field-option:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .field-option img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .field-option h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .field-option p {
+            color: #777;
+            font-size: 1.1em;
+        }
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+        .back{
+            a{
+                text-decoration: none;
+                color: white;
+                background-color: #ff6f00;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em; 
+            transition: background-color 0.3s;
+            }
+            
+        }
+
+        .back:hover {
+            a{
+                background-color: #e65100;
+            }
+            
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .field-option {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Select Your Field</h1>
+  </header>
+  <main>
+    <h2>Which field are you interested in?</h2>
+    <p>Click on any of the options below to explore more about that field.</p>
+    <div class="field-options">
+        <div class="field-option" onclick="chooseField('Science')">
+            
+            <h3><a href="q1.html">Science</a></h3>
+            <p>Explore the science related quiz</p>
+        </div>
+
+        <div class="field-option" onclick="chooseField('Mathematic')">
+          
+            <h3><a href="q2.html">Mathematic</a></h3>
+            <p>To solve Mathematic equestions</p>
+        </div>
+
+        <div class="field-option" onclick="chooseField('General knowlage')">
+            
+            <h3><a href="q3.html">G K</a></h3>
+            <p>If you are intrested in GK and current afairs</p>
+        </div>
+        <div>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="back">
+       <center> <p><a href="index.html">Back</a></p></center>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Your Company. All Rights Reserved.by RISHABH</p>
+</footer>
+</body>
+</html>
